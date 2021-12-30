@@ -19,7 +19,6 @@ import 'add_task_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
-
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -136,7 +135,7 @@ class _HomePageState extends State<HomePage> {
                     label: "Task Completed",
                     onTap: () {
                       _taskController.markTaskCompleted(task.id!);
-
+                      print("Task Completed..");
                       Get.back();
                     },
                     clr: primaryClr,
@@ -146,7 +145,7 @@ class _HomePageState extends State<HomePage> {
               label: "Delete Task",
               onTap: () {
                 _taskController.delete(task);
-
+                print("Task Deleted..");
                 Get.back();
               },
               clr: Colors.red[300]!,

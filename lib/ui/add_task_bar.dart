@@ -201,6 +201,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
             Icons.warning_amber_rounded,
             color: Colors.red,
           ));
+      print("All fields are required !");
     }
   }
 
@@ -217,7 +218,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
       color: _selectedColor,
       isCompleted: 0,
     ));
-    print("My id is " + "$value");
+    print("Inserted Successfully " + "$value");
   }
 
   _colorPallete() {
